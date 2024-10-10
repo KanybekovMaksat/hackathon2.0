@@ -41,7 +41,7 @@ export function RegisterPage() {
     setServerError('')
     try {
       const response = await axios.post(
-        'https://api.event.makalabox.com//api/register-team/',
+        'https://api.event.makalabox.com/api/register-team/',
         user
       )
       console.log('Регистрация успешна:', response.data)
