@@ -35,13 +35,12 @@ export function RegisterPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [serverError, setServerError] = useState('')
 
-  // Функция для отправки данных на сервер
   const registerUser = async (user) => {
     setIsSubmitting(true)
     setServerError('')
     try {
       const response = await axios.post(
-        'https://147.45.109.194/api/register-team/',
+        'https://api.event.makalabox.com/api/register-team/',
         user
       )
       console.log('Регистрация успешна:', response.data)
