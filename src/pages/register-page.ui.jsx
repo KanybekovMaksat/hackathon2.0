@@ -41,7 +41,7 @@ export function RegisterPage() {
     setServerError('')
     try {
       const response = await axios.post(
-        'http://147.45.109.194/api/register-team/',
+        'https://147.45.109.194/api/register-team/',
         user
       )
       console.log('Регистрация успешна:', response.data)
